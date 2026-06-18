@@ -11,12 +11,14 @@ int main(int argc, char *argv[]) {
         printf("Pas de nom renseigné\n");
         return 1;
     }
-    for (int i = 1; i < argc; i++){
+    int i = 1;
+    while (i < argc) {
         char *hi = "Bonjour ";
         char *name = argv[i];
         print_name(hi);
         print_name(name);
         putchar('\n');
+        i++;
     }
     return 0;
 }
